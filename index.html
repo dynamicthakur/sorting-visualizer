@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css"> <!-- purre code me ek hi css file hai-->
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=200 step=1 value=80> <!-- size fo array kitna ho-->
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4> <!-- speed visualization ki kitni ho-->
+                <button id="a_generate">Generate New Array!</button> <!-- isse click karke nayi array generate kar sakte hai-->
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div >
+            <!-- taaki array ke objects beech me rahye-->
+        </div>
+
+        <div id="array_container">
+            <!-- is saame ye khaali hai ,but hum dom ka use karke isme element insert karayenge or phir usse change karenge acc. to our need-->
+        </div>
+
+       
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!-- Concept of sepration ka use kaara hai taaki code error free rah saake-->
+    <script src="./scripts/main.js"></script>   <!-- isme haamare main js file hai -->
+    <script src="./scripts/visualizations.js"></script>  <!-- visualization kaise ho raha hai ye is file  me hai-->
+
+    <script src="./scripts/bubble_sort.js"></script> <!-- isme bubble sort ke implementation hai-->
+    <script src="./scripts/selection_sort.js"></script> <!--isme selection sort ke implementation hai-->
+    <script src="./scripts/insertion_sort.js"></script> <!-- isme insertion sort ke implementation hai-->
+    <script src="./scripts/merge_sort.js"></script> <!-- isme merge sort ke implementation hai-->
+    <script src="./scripts/quick_sort.js"></script> <!-- isme quick sort ke implementation hai-->
+    <script src="./scripts/heap_sort.js"></script> <!-- isme heap sort ke implementation hai-->
+</body>
+
+
+</html>
